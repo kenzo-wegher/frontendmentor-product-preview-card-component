@@ -1,0 +1,182 @@
+/* COLORS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+:root {
+  /* primary */
+  --dark-cyan: hsla(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  /* neutral */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* TYPOGRAPHY */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--cream);
+  width: 100vw;
+  height: 100vh;
+}
+
+#box-card {
+  display: flex;
+  width: 40vw;
+  height: 55vh;
+  margin: 22.5vh auto 0 auto;
+}
+
+#desktop-img {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+#mobile-img {
+  display: none;
+}
+
+#box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--white);
+}
+#box-text h3 {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.6rem;
+  letter-spacing: 0.15rem;
+  color: var(--dark-grayish-blue);
+}
+#box-text h1 {
+  font-family: Fraunces, sans-serif;
+  font-size: 1.7rem;
+  color: var(--very-dark-blue);
+  line-height: 1.7rem;
+}
+#box-text p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
+  letter-spacing: 0.06rem;
+  color: var(--dark-grayish-blue);
+  line-height: 1.1rem;
+}
+
+.text-boxes {
+  width: 80%;
+}
+
+#prices {
+  display: flex;
+  align-items: center;
+}
+#prices h2 {
+  font-family: Fraunces, sans-serif;
+  font-size: 1.7rem;
+  color: var(--dark-cyan);
+  padding-right: 15px;
+}
+#prices .labeled-price {
+  text-decoration: line-through;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
+  letter-spacing: 0.06rem;
+}
+
+button:hover {
+  background-color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
+.attribution {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 990px) {
+  #box-card {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 93vh;
+    margin: 2.5vh auto 0 auto;
+  }
+  #desktop-img {
+    display: none;
+  }
+  #mobile-img {
+    display: block;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px 10px 0 0;
+  }
+  #box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--white);
+  }
+  #box-text h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+  }
+  #box-text h1 {
+    font-size: 1.9rem;
+  }
+  #box-text p {
+    font-size: 0.8rem;
+  }
+  .text-boxes {
+    width: 90%;
+  }
+  #prices h2 {
+    font-size: 1.9rem;
+  }
+  button {
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem;
+  }
+  .attribution {
+    font-size: 9px;
+    margin-top: 7px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #box-card {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #box-card {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=index.css.map */
